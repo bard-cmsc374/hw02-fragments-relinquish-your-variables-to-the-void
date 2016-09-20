@@ -2,6 +2,6 @@
 <resources>
     <string name="hello">Hello World, ToDoList</string>
     <string name="app_name">ToDoList</string>
-    <string name="add_item_hint">To Do Item</string>
+    <string name="add_item_hint">Item</string>
     <string name="add_button">Add</string>
 </resources>
