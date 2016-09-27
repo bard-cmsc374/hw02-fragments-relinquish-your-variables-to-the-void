@@ -5,6 +5,8 @@ package edu.bard.todolist_lab1;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import static edu.bard.todolist_lab1.ListItemView.*;
 
 public class ToDoList extends Activity {
     public static String TAG = "todolab";
@@ -28,31 +32,40 @@ public class ToDoList extends Activity {
         // Inflate your view
         setContentView(R.layout.main); // Extracts resources, autogenerates R.java from XML file
 
+        // Create Fragment Manager
+        FragmentManager fm = getFragmentManager();
+        Fragment listItems = fm.findFragmentById(R.id.myListView);
+
+        if (listItems == null) {
+            listItems = new ListItemView();
+            fm.beginTransaction().add(R.id.myListView, listItems).commit();
+        }
+
         // Get references to UI widgets
         mEditText = (EditText) findViewById(R.id.myEditText);
         mItemButton = (Button) findViewById(R.id.addButton);
-        mListView = (ListView) findViewById(R.id.myListView);
+        //mListView = (ListView) findViewById(R.id.myListFragment);
 
         // Create the ArrayList and the ArrayAdapter
-        mToDoItems = new ArrayList<String>();
-        aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mToDoItems);
+        //mToDoItems = new ArrayList<String>();
+        //aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mToDoItems);
 
         // Bind the listview to the array adapter
-        mListView.setAdapter(aa);
+        //mListView.setAdapter(aa);
 
         // Add key listener to add the new todo item
         // when the middle D-pad button is pressed.
         mItemButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                mToDoItems.add(0, mEditText.getText().toString());
-                aa.notifyDataSetChanged();
+                ListItemView.addItem(mEditText.getText().toString());
+                //mToDoItems.add(0, mEditText.getText().toString());
+                //aa.notifyDataSetChanged();
                 mEditText.setText("");
             }
         });
 
         Log.i(TAG, "Entered onCreate");
     }
-
 
     protected void onStart() {
         super.onStart();
