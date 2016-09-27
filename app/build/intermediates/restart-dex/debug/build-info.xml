@@ -4,21 +4,22 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="763065369435434"
-    token="2176580325105637247" >
+    timestamp="772873635605419"
+    token="2176580325105637247"
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="288" />
+        duration="1685" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="72" />
+        duration="258" />
     <task
         name="verifier"
-        duration="6" />
+        duration="83" />
 
     <artifact
         location="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/resources-debug.ap_"
@@ -27,12 +28,14 @@
         location="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
         type="DEX" />
 
-    <build timestamp="762270877246891" >
+    <build timestamp="766636516234990" >
         <artifact
             location="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="763065369435434" >
+    <build
+        timestamp="772873635605419"
+        verifier="CLASS_ADDED" >
         <artifact
             location="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />

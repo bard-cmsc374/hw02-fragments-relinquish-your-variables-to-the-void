@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="951afc3c2a2dca4077f6eb85b37eac9d05d13273">
+        <dex dex="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd8872ceb7231dc892fc364a207334f5e3c3975a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="dc03011baa7bb531b451f4a8a293f2130c714c17">
+        <dex dex="/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_038b9e39928459965c285dc5425421a0bda0789a/classes.dex" />
+    </item>
+
+</items>
