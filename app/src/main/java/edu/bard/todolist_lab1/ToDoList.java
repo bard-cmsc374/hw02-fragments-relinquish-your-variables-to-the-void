@@ -3,6 +3,7 @@ package edu.bard.todolist_lab1;
   Most basic Todo List in one activity, no fragments.
  */
 import java.util.ArrayList;
+import java.util.List;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -35,6 +36,12 @@ public class ToDoList extends Activity {
         // Create Fragment Manager
         FragmentManager fm = getFragmentManager();
         Fragment listItems = fm.findFragmentById(R.id.myListView);
+        Fragment inputFrag = fm.findFragmentById(R.id.myInputView);
+
+        if (inputFrag == null) {
+            inputFrag = new InputFragment();
+            fm.beginTransaction().add(R.id.myInputView, inputFrag).commit();
+        }
 
         if (listItems == null) {
             listItems = new ListItemView();
@@ -42,8 +49,8 @@ public class ToDoList extends Activity {
         }
 
         // Get references to UI widgets
-        mEditText = (EditText) findViewById(R.id.myEditText);
-        mItemButton = (Button) findViewById(R.id.addButton);
+        //mEditText = (EditText) findViewById(R.id.myEditText);
+        //mItemButton = (Button) findViewById(R.id.addButton);
         //mListView = (ListView) findViewById(R.id.myListFragment);
 
         // Create the ArrayList and the ArrayAdapter
@@ -55,17 +62,22 @@ public class ToDoList extends Activity {
 
         // Add key listener to add the new todo item
         // when the middle D-pad button is pressed.
-        mItemButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                ListItemView.addItem(mEditText.getText().toString());
-                //mToDoItems.add(0, mEditText.getText().toString());
-                //aa.notifyDataSetChanged();
-                mEditText.setText("");
-            }
-        });
+//        mItemButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View view) {
+//                ListItemView.addItem(mEditText.getText().toString());
+//                //mToDoItems.add(0, mEditText.getText().toString());
+//                //aa.notifyDataSetChanged();
+//                mEditText.setText("");
+//            }
+//        });
 
         Log.i(TAG, "Entered onCreate");
     }
+//
+//    public void onNewItemAdded(String newItem) {
+//        ListItemView listFrag = (ListItemView) getFragmentManager().findFragmentById(R.id.myListFragment);
+//        listFrag.
+//    }
 
     protected void onStart() {
         super.onStart();

@@ -5,26 +5,12 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
 
-  <LinearLayout
+  <FrameLayout
+      android:id="@+id/myInputView"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal">
+      android:layout_height="wrap_content">
 
-  <Button
-      android:id="@+id/addButton"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="@string/add_button"
-      />
-
-
-  <EditText
-    android:id="@+id/myEditText"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:hint="@string/add_item_hint"
-  />
-  </LinearLayout>
+  </FrameLayout>
 
   <FrameLayout
       android:id="@+id/myListView"
