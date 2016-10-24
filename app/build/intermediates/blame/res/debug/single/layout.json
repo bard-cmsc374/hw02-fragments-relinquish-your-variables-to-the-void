@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/merged/debug/layout/listitemview_fragment.xml",
-        "source": "/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/src/main/res/layout/listitemview_fragment.xml"
+        "merged": "/Users/sven/courses/374/ASgrading/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/merged/debug/layout/input_fragment.xml",
+        "source": "/Users/sven/courses/374/ASgrading/hw02-fragments-relinquish-your-variables-to-the-void/app/src/main/res/layout/input_fragment.xml"
     },
     {
-        "merged": "/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/merged/debug/layout/input_fragment.xml",
-        "source": "/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/src/main/res/layout/input_fragment.xml"
+        "merged": "/Users/sven/courses/374/ASgrading/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/sven/courses/374/ASgrading/hw02-fragments-relinquish-your-variables-to-the-void/app/src/main/res/layout/main.xml"
     },
     {
-        "merged": "/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/Users/drewcarlson1123/AndroidStudioProjects/hw02-fragments-relinquish-your-variables-to-the-void/app/src/main/res/layout/main.xml"
+        "merged": "/Users/sven/courses/374/ASgrading/hw02-fragments-relinquish-your-variables-to-the-void/app/build/intermediates/res/merged/debug/layout/listitemview_fragment.xml",
+        "source": "/Users/sven/courses/374/ASgrading/hw02-fragments-relinquish-your-variables-to-the-void/app/src/main/res/layout/listitemview_fragment.xml"
     }
 ]

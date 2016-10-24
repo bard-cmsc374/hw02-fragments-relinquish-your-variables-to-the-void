@@ -40,6 +40,7 @@ public class ListItemView extends Fragment {
         return v;
     }
 
+        // XX This needs some documentation!!
     public static void addItem(String item) {
         mToDoItems.add(0, item);
         aa.notifyDataSetChanged();

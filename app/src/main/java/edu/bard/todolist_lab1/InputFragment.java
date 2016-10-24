@@ -17,7 +17,8 @@ public class InputFragment extends Fragment {
 
     private OnItemAddedListener newItemListener;
 
-    public interface OnItemAddedListener {
+    public interface OnItemAddedListener { // XX what does this do?  It's not even implemented, right?
+        // XX doc??
         public void onNewItemAdded(String newItem);
     }
 
